@@ -1,0 +1,59 @@
+/* style.css */
+
+body {
+    padding-bottom: 70px; /* Ruang untuk footer */
+    background-color: #f8f9fa; /* Latar belakang sedikit abu-abu */
+}
+
+.navbar {
+    /* Bisa tambahkan style navbar jika perlu */
+}
+
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efek sedikit naik saat hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan lebih jelas saat hover */
+}
+
+.card-img-top {
+    height: 180px; /* Tinggi gambar seragam */
+    object-fit: contain; /* Gambar terlihat utuh, mungkin perlu 'cover' jika ingin penuhi area */
+    background-color: #eee; /* Warna latar jika gambar transparan atau tidak ada */
+    padding: 10px; /* Beri padding agar gambar tidak terlalu mepet */
+}
+
+.card-title {
+    font-weight: bold;
+    color: #0d6efd; /* Warna judul (biru bootstrap) */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column; /* Konten body jadi kolom */
+}
+
+.card-text.price-info {
+    font-weight: bold;
+    color: #198754; /* Warna hijau untuk info harga */
+    margin-top: auto; /* Dorong info harga & tombol ke bawah */
+    padding-top: 10px;
+}
+
+.card-text.description {
+    font-size: 0.95em;
+    color: #555;
+}
+
+.btn-contact {
+    margin-top: 10px; /* Jarak tombol dari info harga */
+}
+
+footer a {
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
